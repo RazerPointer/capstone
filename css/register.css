@@ -1,0 +1,11 @@
+.wrap_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background-color: red;
+  width : 345px;
+  height : 450px;
+}
+

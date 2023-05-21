@@ -1,0 +1,91 @@
+body{
+  font-family: 'Nanum Gothic', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  color:#333;
+}
+
+a{
+  text-decoration:none;
+}
+
+.inner {
+  width:1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+header {
+  background-color: red;
+  position: fixed;
+  top:0;
+  z-index: 9;
+  width:100%;
+  border-bottom: 1px solid #c8c8c8;
+}
+
+header .inner {
+  height: 100px;
+}
+
+header .main-menu{
+  position:absolute;
+  display:flex;
+  width:100%;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  background-color: orange;
+  font-weight: bold;
+  justify-content: right;
+  align-items: center;
+}
+
+header .main-menu .main_category{
+  padding: 0px 25px 0px 25px;
+}
+
+header .main-menu .main_category .profile{
+  display:flex;
+  padding: 0px 25px 0px 25px;
+}
+
+header .main-menu .search{
+  position: relative;
+  height: 30px;
+}
+
+header .main-menu .search input{
+  width: 36px;
+  height: 30px;
+  padding: 4px 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  background-color: #fff;
+  color: #777;
+  font-size: 12px;
+  transition: width .4s;
+}
+
+header .main-menu .search input:focus{
+  width: 190px;
+  border-color: #ea9926;
+}
+
+header .main-menu .search .material-icons {
+  height: 24px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 5px;
+  margin: auto;
+  transition: .4s;
+}
+
+header .main-menu .search.focused .material-icons {
+  opacity: 0;
+}
