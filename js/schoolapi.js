@@ -35,6 +35,9 @@ fetch(apiURL + "?" + new URLSearchParams(params))
       //console.log("대학명: " + universityName[i] + ", 대학 코드: " + universityCode[i] + ", 캠퍼스구분: " + campusName[i]);
     }
 
+
+    //학교 이름 데이터 div로 만들어서 숨겨놓기
+    //학교검색용
     for (var i = 0; i < contentList.length; i++) {
       var newDiv = document.createElement('div');
       var newText = document.createTextNode(universityName[i] + "(" + campusName[i] + ")");
