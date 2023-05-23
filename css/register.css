@@ -4,8 +4,35 @@
   flex-direction: column;
   left: 50%;
   transform: translate(-50%, 0);
-  background-color: red;
+  background-color: white;
   width : 345px;
-  height : 450px;
+  height : auto;
+  border-style : solid;
+  border-color : lightgray;
+  border-width : 1px;
+  padding : 25px 25px 25px 25px;
 }
 
+.wrap_content .label {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.wrap_content .label p{
+  margin: 3px 0 3px 0;
+  font-size: small;
+}
+
+.wrap_content .input {
+  margin-bottom: 15px;
+}
+
+.wrap_content .main {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.wrap_content .info {
+  margin-top: 0;
+}

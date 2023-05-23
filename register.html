@@ -12,12 +12,12 @@
 <form method="post" action="http://192.168.61.85:8000/polls/login/" id="register">
   <div class="wrap_content">
     <div class="text">
-      <h1>withrium 회원가입</h1>
-      <p>withrium 가입하여<br/>
+      <h2 class="main">withrium 회원가입</h2>
+      <p class="info">withrium 가입하여<br/>
         withrium의 모든 서비스를 이용해보세요
       </p>
     </div>
-    <h1>학교 선택</h1>
+    <h3>학교 선택</h3>
     <div class="input">
       <div class="label">
         <p>입학 년도</p>
@@ -57,7 +57,10 @@
         <option value="1993">1993년</option>
       </select>
     </div>
-    <div id="schoolname">
+    <div id="schoolname" class="input">
+      <div class="label">
+        <p>학교</p>
+      </div>
       <input type="text" name="campus_name" maxlength="20" placeholder="학교 이름 검색" class="search" id = "search">
     </div>
     <input type="submit" class="confirm"/>
