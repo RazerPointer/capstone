@@ -39,7 +39,7 @@ fetch(apiURL + "?" + new URLSearchParams(params))
     //학교 이름 데이터 div로 만들어서 숨겨놓기
     //학교검색용
     for (var i = 0; i < contentList.length; i++) {
-      var newDiv = document.createElement('div');
+      var newDiv = document.createElement('a');
       var newText = document.createTextNode(universityName[i] + "(" + campusName[i] + ")");
       var obj = document.getElementById("schoolname");
       newDiv.appendChild(newText);
@@ -48,6 +48,7 @@ fetch(apiURL + "?" + new URLSearchParams(params))
       newDiv.style.display = 'none';
     }
 
+    //검색어 필터 함수
     function filter(){
       var search = document.getElementsByClassName("search")[0].value;
       for (var i = 0; i < schoolnamefield.length; i++){
@@ -59,14 +60,10 @@ fetch(apiURL + "?" + new URLSearchParams(params))
       }
     }
 
-
+    //검색 이벤트 리스너 --> 실제 검색시 실행되는 부분
     var sname = document.getElementById("search");
     sname.addEventListener('keyup',filter);
 
-
-    console.log(schoolnamefield[0]);
-
-    
   })
   .catch(function(error) {
     console.error("API 요청 중 오류가 발생했습니다.", error);
