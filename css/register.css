@@ -32,11 +32,18 @@ a {
 
 .wrap_content .input {
   margin-bottom: 15px;
+  position:relative;
+  width:100%;
 }
 
 .wrap_content .input .search {
+  position:relative;
   margin-bottom: 5px;
-  width: 100%;
+  width: inherit;
+  padding: 6px 6px 6px 6px;
+  border-radius: 6px;
+  border-width: 1px;
+  box-sizing:border-box;
 }
 
 .wrap_content .main {
@@ -46,4 +53,27 @@ a {
 
 .wrap_content .info {
   margin-top: 0;
+}
+
+.wrap_content .yearlist {
+  padding: 6px;
+  border-width: 1px;
+  border-radius: 6px;
+  width: inherit;
+  box-sizing: border-box;
+}
+
+.wrap_content .confirm {
+  position: relative;
+  width: inherit;
+  height: 30px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  border-width: 0px;
+  background-color: blue;
+  color: white;
+}
+
+.wrap_content .text {
+  position: relative;
 }

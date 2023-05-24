@@ -47,6 +47,7 @@ fetch(apiURL + "?" + new URLSearchParams(params))
       newDiv.className = 'schoolnamefield';
       newDiv.id = 'schoolnamefield';
       newDiv.href = '#';
+      newDiv.style.position = 'relative';
       obj.appendChild(newDiv);
       newDiv.style.display = 'none';
 
