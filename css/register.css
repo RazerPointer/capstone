@@ -1,3 +1,9 @@
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
 .wrap_content {
   position: relative;
   display: flex;
@@ -26,6 +32,11 @@
 
 .wrap_content .input {
   margin-bottom: 15px;
+}
+
+.wrap_content .input .search {
+  margin-bottom: 5px;
+  width: 100%;
 }
 
 .wrap_content .main {
