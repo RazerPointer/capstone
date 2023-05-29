@@ -17,7 +17,6 @@ a{
 }
 
 header {
-  background-color: red;
   position: fixed;
   top:0;
   z-index: 9;
@@ -26,21 +25,41 @@ header {
 }
 
 header .inner {
-  height: 100px;
+  height: 36px;
+  width: 100%;
 }
 
 header .main-menu{
   position:absolute;
   display:flex;
   width:100%;
-  top:50%;
+  bottom:0;
   left:50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, 0);
   z-index: 1;
-  background-color: orange;
   font-weight: bold;
+  align-items: center;
+  justify-content: center;
+}
+
+header .main-menu .blank{
+  width: calc(100% / 3);
+}
+
+header .main-menu .wrap_category{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 3);
+  height: inherit;
+}
+
+
+header .main-menu .wrap_othermain{
+  display: flex;
   justify-content: right;
   align-items: center;
+  width: calc(100% / 3);
 }
 
 header .main-menu .main_category{
@@ -88,4 +107,20 @@ header .main-menu .search .material-icons {
 
 header .main-menu .search.focused .material-icons {
   opacity: 0;
+}
+
+/* 여기까지 inner */
+header .sub_category {
+  width:100%;
+  background-color: #0d339a;
+}
+
+header .sub_category .wrap_sub_category {
+  display:flex;
+  justify-content:center;
+}
+
+header .sub_category .wrap_sub_category .sub_menu_content {
+  padding:10px 25px 10px 25px;
+  color:white;
 }
