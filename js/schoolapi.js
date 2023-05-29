@@ -37,7 +37,8 @@ fetch(apiURL + "?" + new URLSearchParams(params))
     }
 
 
-    //학교 이름 데이터 div로 만들어서 숨겨놓기
+    //학교 이름 데이터 a태그로 만들어서 숨겨놓기
+    //여기서 생성되는 태그들의 스타일도 정의를 해주어야됨
     //학교검색용
     for (var i = 0; i < contentList.length; i++) {
       var newDiv = document.createElement('a');
@@ -48,6 +49,10 @@ fetch(apiURL + "?" + new URLSearchParams(params))
       newDiv.id = 'schoolnamefield';
       newDiv.href = '#';
       newDiv.style.position = 'relative';
+      newDiv.style.padding = '6px 7px 6px 7px';
+      newDiv.style.marginBottom = '4px';
+      newDiv.style.boxSizing = 'border-box';
+      newDiv.style.fontSize = 'small';
       obj.appendChild(newDiv);
       newDiv.style.display = 'none';
 

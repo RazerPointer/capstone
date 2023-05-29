@@ -36,13 +36,23 @@ a {
   width:100%;
 }
 
+.wrap_content .input .wrap_search {
+  width:inherit;
+  padding:6px;
+  border-width:1px;
+  border-style:solid;
+  border-radius:6px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-sizing:border-box;
+  margin-bottom: 6px;
+}
+
 .wrap_content .input .search {
   position:relative;
-  margin-bottom: 5px;
   width: inherit;
-  padding: 6px 6px 6px 6px;
-  border-radius: 6px;
-  border-width: 1px;
+  border: none;
   box-sizing:border-box;
 }
 
@@ -55,13 +65,28 @@ a {
   margin-top: 0;
 }
 
-.wrap_content .yearlist {
-  padding: 6px;
+.wrap_content .wrap_yearlist {
+  width:inherit;
+  padding:6px;
   border-width: 1px;
+  border-style: solid;
   border-radius: 6px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  box-sizing: border-box;
+}
+
+.wrap_content .yearlist {
+  border: none;
   width: inherit;
   box-sizing: border-box;
 }
+
+.wrap_content .yearlist::-ms-expand {
+  display: none;
+}
+
 
 .wrap_content .confirm {
   position: relative;
