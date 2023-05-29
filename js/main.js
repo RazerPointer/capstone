@@ -35,3 +35,5 @@ maincategory.addEventListener('mouseout', function(){
   mainframe.style.marginTop = "0px";
   mainframe.style.transition = "margin .4s";
 });
+
+const tmp = 1;
