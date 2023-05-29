@@ -161,15 +161,106 @@ header .sub_category .wrap_sub_category .sub_menu_content {
 /* 서브메뉴 css */
 
 
+
+
+
 .wrap_mainframe {
   position:relative;
   display:flex;
   justify-content:center;
   align-items:center;
 }
+
 .wrap_mainframe .mainframe {
   position:relative;
-  width:70%;
+  width:1280px;
   height:860px;
-  background-image: url(/jspark.jpg);
+  background-color: blue;
 }
+
+.wrap_mainframe .mainframe .firstdivision {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  flex-direction: column;
+  background-color: orange;
+  width: 400px;
+  margin-right:40px;
+}
+
+.wrap_mainframe .mainframe .firstdivision .calender {
+  width:400px;
+  height:365px; 
+  background-color: red;
+  padding-bottom: 40px;
+}
+
+.wrap_mainframe .mainframe .firstdivision .board_base{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:400px;
+  height:140px;
+  margin-bottom:40px;
+}
+
+.wrap_mainframe .mainframe .firstdivision .board_base:last-child{
+  margin-bottom:0;
+}
+
+.wrap_mainframe .mainframe .firstdivision .board_base .board_header {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding-top:0;
+  margin-bottom:18px;
+}
+
+.wrap_mainframe .mainframe .firstdivision .board_base .board_header .title {
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  width:200px;
+  font-size:20px;
+  font-weight:bolder;
+}
+
+.wrap_mainframe .mainframe .firstdivision .board_base .board_header .more {
+  display:flex;
+  justify-content:right;
+  align-items:center;
+  width:200px;
+  font-size:10px;
+}
+
+.wrap_mainframe .mainframe .firstdivision .board_base .board_content {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:14px;
+  margin-bottom:8px;
+}
+
+.wrap_mainframe .mainframe .firstdivision .board_base .board_content:last-child {
+  margin-bottom:0;
+}
+
+.wrap_mainframe .mainframe .firstdivision .board_base .board_content .board_post{
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  width:200px;
+}
+
+.wrap_mainframe .mainframe .firstdivision .board_base .board_content .post_time{
+  display:flex;
+  justify-content:right;
+  align-items:center;
+  width:200px;
+}
+/*첫번째 파트*/
+
+
+
+
