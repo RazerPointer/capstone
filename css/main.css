@@ -14,10 +14,12 @@ a{
   width:1100px;
   margin: 0 auto;
   position: relative;
+  background-color: white;
 }
 
 header {
-  position: fixed;
+  /*position: fixed;*/
+  position:relative;
   top:0;
   z-index: 9;
   width:100%;
@@ -126,10 +128,11 @@ header .main-menu .search .material-icons {
 header .main-menu .search.focused .material-icons {
   opacity: 0;
 }
-
 /* 여기까지 inner */
+
+
 header .sub_category {
-  display:none;
+  display:flex;
   position:absolute;
   align-items:center;
   justify-content:center;
@@ -138,10 +141,15 @@ header .sub_category {
   background-color: #0d339a;
   left:0;
   top:100%;
+  transition : height .4s;  
 }
 
+header .sub_category.hide{
+  height:0;
+} 
+
 header .sub_category .wrap_sub_category {
-  display:flex;
+  display:none;
   justify-content:center;
   align-items:center;
 }
@@ -150,5 +158,18 @@ header .sub_category .wrap_sub_category .sub_menu_content {
   padding:10px 25px 10px 25px;
   color:white;
 }
-
 /* 서브메뉴 css */
+
+
+.wrap_mainframe {
+  position:relative;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.wrap_mainframe .mainframe {
+  position:relative;
+  width:70%;
+  height:860px;
+  background-image: url(/jspark.jpg);
+}
