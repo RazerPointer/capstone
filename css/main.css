@@ -10,6 +10,29 @@ a{
   text-decoration:none;
 }
 
+
+
+
+
+/*달력용 css*/
+td.saturday{
+  color:blue;
+}
+
+td.sunday{
+  color:red;
+}
+
+td.cal-body{
+  width:55px;
+  height:50px;
+}
+/**/
+
+
+
+
+
 .inner {
   width:1100px;
   margin: 0 auto;
@@ -183,16 +206,54 @@ header .sub_category .wrap_sub_category .sub_menu_content {
   justify-content:center;
   align-items:center;
   flex-direction: column;
-  background-color: orange;
+  background-color: white;
   width: 400px;
   margin-right:40px;
 }
 
-.wrap_mainframe .mainframe .firstdivision .calender {
+.wrap_mainframe .mainframe .firstdivision .calendar {
   width:400px;
   height:365px; 
-  background-color: red;
   padding-bottom: 40px;
+}
+
+.wrap_mainframe .mainframe .firstdivision .calendar .calendar_title {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  margin-bottom: 36px;
+}
+.wrap_mainframe .mainframe .firstdivision .calendar .title {
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  width:200px;
+  font-size:20px;
+  font-weight:bolder;
+}
+
+.wrap_mainframe .mainframe .firstdivision .calendar .more {
+  display:flex;
+  justify-content:right;
+  align-items:center;
+  width:200px;
+  font-size:10px;
+}
+
+.wrap_mainframe .mainframe .firstdivision .calendar .calendartoday {
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  height:15px;
+  margin-bottom:14px;
+  font-size:12px;
+}
+
+.wrap_mainframe .mainframe .firstdivision .calendar .day {
+  width:55px;
+  height:20px;
+  margin-right:2.2px;
+  font-size:12px;
 }
 
 .wrap_mainframe .mainframe .firstdivision .board_base{
