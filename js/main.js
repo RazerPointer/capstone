@@ -24,7 +24,7 @@ const mainframe = document.querySelector('.mainframe');
 maincategory.addEventListener('mouseover', function(){
   subcategory.classList.remove('hide');
   wrapsubcategory.style.display = "flex";
-  mainframe.style.marginTop = "59px";
+  mainframe.style.marginTop = "99px";
   mainframe.style.transition = "margin .4s";
 });
 
@@ -32,7 +32,7 @@ maincategory.addEventListener('mouseover', function(){
 maincategory.addEventListener('mouseout', function(){
   subcategory.classList.add('hide');
   wrapsubcategory.style.display = "none";
-  mainframe.style.marginTop = "0px";
+  mainframe.style.marginTop = "40px";
   mainframe.style.transition = "margin .4s";
 });
 
@@ -51,7 +51,6 @@ weekday[5] = "금요일";
 weekday[6] = "토요일";
 
 var todayString = year + '년 ' + month + '월 ' + day + '일 ' + weekday[today.getDay()];
-console.log(calendartoday.nodeValue);
 console.log(todayString);
 calendartoday.nodeValue = todayString;
 
@@ -85,10 +84,22 @@ function generateCalendar() {
         tr.appendChild(td);
       } else if (dateCount > lastDay) {
         break;
-      } else {
+        } else {
         var td = document.createElement("td");
         td.classList.add("cal-body");
-        td.innerText = dateCount;
+
+        // 날짜 div 생성
+        var dateDiv = document.createElement("div");
+        dateDiv.classList.add("datediv");
+        dateDiv.innerText = dateCount;
+        dateDiv.style.height = "14px";
+        td.appendChild(dateDiv);
+
+        //일정입력div 생성
+        var scheduleDiv = document.createElement("div");
+        scheduleDiv.classList.add("schedulediv" + dateCount);
+        scheduleDiv.style.height = "36px";
+        td.appendChild(scheduleDiv);
 
         // 일요일은 빨간색으로 표시
         if (col === 0) {
@@ -98,16 +109,6 @@ function generateCalendar() {
         else if (col === 6) {
           td.classList.add("saturday");
         }
-
-        /*// 일정 입력 폼 추가
-        var input = document.createElement("div");
-        input.classList.add("event-input");
-        input.innerHTML = "<input type='text' placeholder='일정 입력'>";
-        td.appendChild(input);
-
-        td.addEventListener("click", function() {
-          this.querySelector(".event-input").style.display = "block";
-        });*/
 
         tr.appendChild(td);
         dateCount++;

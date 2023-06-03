@@ -12,6 +12,74 @@ a{
 
 
 
+/*게시판 보드용 css*/
+.board_base{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:400px;
+  height:140px;
+}
+
+.board_base:last-child{
+  margin-bottom:0;
+}
+
+.board_base .board_header {
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  margin-bottom:22px;
+  height:28px;
+}
+
+.board_base .board_header .title {
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  width:200px;
+  font-size:20px;
+  font-weight:bolder;
+}
+
+.board_base .board_header .more {
+  display:flex;
+  justify-content:right;
+  align-items:center;
+  width:200px;
+  font-size:10px;
+}
+
+.board_base .board_content {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-size:14px;
+  margin-bottom:8px;
+  height:14px;
+}
+
+.board_base .board_content:last-child {
+  margin-bottom:0;
+}
+
+.board_base .board_content .board_post{
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  width:200px;
+}
+
+.board_base .board_content .post_time{
+  display:flex;
+  justify-content:right;
+  align-items:center;
+  width:200px;
+}
+
+
+
 
 
 /*달력용 css*/
@@ -26,6 +94,7 @@ td.sunday{
 td.cal-body{
   width:55px;
   height:50px;
+  font-size:8px;
 }
 /**/
 
@@ -186,7 +255,7 @@ header .sub_category .wrap_sub_category .sub_menu_content {
 
 
 
-
+/*첫번째 파트*/
 .wrap_mainframe {
   position:relative;
   display:flex;
@@ -195,15 +264,16 @@ header .sub_category .wrap_sub_category .sub_menu_content {
 }
 
 .wrap_mainframe .mainframe {
+  display:flex;
   position:relative;
   width:1280px;
   height:860px;
-  background-color: blue;
+  margin-top:40px;
 }
 
 .wrap_mainframe .mainframe .firstdivision {
   display:flex;
-  justify-content:center;
+  justify-content:flex-start;
   align-items:center;
   flex-direction: column;
   background-color: white;
@@ -223,10 +293,11 @@ header .sub_category .wrap_sub_category .sub_menu_content {
   align-items:center;
   margin-bottom: 36px;
 }
+
 .wrap_mainframe .mainframe .firstdivision .calendar .title {
   display:flex;
   justify-content:left;
-  align-items:center;
+  align-items:flex-end;
   width:200px;
   font-size:20px;
   font-weight:bolder;
@@ -256,72 +327,49 @@ header .sub_category .wrap_sub_category .sub_menu_content {
   font-size:12px;
 }
 
-.wrap_mainframe .mainframe .firstdivision .board_base{
+.wrap_mainframe .mainframe .firstdivision .boardblock {
   display:flex;
   flex-direction:column;
-  justify-content:center;
-  align-items:center;
   width:400px;
   height:140px;
   margin-bottom:40px;
-}
-
-.wrap_mainframe .mainframe .firstdivision .board_base:last-child{
-  margin-bottom:0;
-}
-
-.wrap_mainframe .mainframe .firstdivision .board_base .board_header {
-  display:flex;
   justify-content:center;
   align-items:center;
-  padding-top:0;
-  margin-bottom:18px;
 }
 
-.wrap_mainframe .mainframe .firstdivision .board_base .board_header .title {
-  display:flex;
-  justify-content:left;
-  align-items:center;
-  width:200px;
-  font-size:20px;
-  font-weight:bolder;
-}
-
-.wrap_mainframe .mainframe .firstdivision .board_base .board_header .more {
-  display:flex;
-  justify-content:right;
-  align-items:center;
-  width:200px;
-  font-size:10px;
-}
-
-.wrap_mainframe .mainframe .firstdivision .board_base .board_content {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  font-size:14px;
-  margin-bottom:8px;
-}
-
-.wrap_mainframe .mainframe .firstdivision .board_base .board_content:last-child {
-  margin-bottom:0;
-}
-
-.wrap_mainframe .mainframe .firstdivision .board_base .board_content .board_post{
-  display:flex;
-  justify-content:left;
-  align-items:center;
-  width:200px;
-}
-
-.wrap_mainframe .mainframe .firstdivision .board_base .board_content .post_time{
-  display:flex;
-  justify-content:right;
-  align-items:center;
-  width:200px;
+.wrap_mainframe .mainframe .firstdivision .boardblock:last-child {
+  margin-bottom:0px;
 }
 /*첫번째 파트*/
 
 
 
 
+/*두번째 파트 css 시작*/
+.wrap_mainframe .mainframe .seconddivision {
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  flex-direction: column;
+  background-color: white;
+  width: 400px;
+  margin-right:40px;
+}
+
+.wrap_mainframe .mainframe .seconddivision .boardblock{
+  display:flex;
+  flex-direction:column;
+  width:400px;
+  height:140px;
+  margin-bottom:40px;
+  justify-content:center;
+  align-items:center;
+}
+
+.wrap_mainframe .mainframe .seconddivision .boardblock:nth-child(2){
+  margin-bottom:84px;
+}
+
+.wrap_mainframe .mainframe .seconddivision .boardblock:last-child{
+  margin-bottom:0px;
+}
