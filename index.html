@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/mainpage.css">
+    <link rel="stylesheet" href="./css/header.css">
     <!-- open graph -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Heropy Coffee" />
@@ -46,8 +47,8 @@
                         <div class="main_category_name">
                             마이페이지
                         </div>
-                        <div class="sub_category hide">
-                            <div class="wrap_sub_category">
+                        <div class="sub_category_mypage hide">
+                            <div class="wrap_sub_category_mypage">
                                 <div class="sub_menu_content">개인정보관리</div>
                                 <div class="sub_menu_content">학교정보</div>
                                 <div class="sub_menu_content">수강과목</div>
@@ -58,13 +59,20 @@
                         </div>
                     </li>
                     <li class="main_category">
-                        <div class="main_category_name">
+                        <a href="notice.html" class="main_category_name">
                             공지사항
-                        </div>
+                        </a>
                     </li>
-                    <li class="main_category">
-                        <div class="main_category_name">
+                    <li class="main_category_community">
+                        <a href="board_collection.html" class="main_category_name">
                             커뮤니티
+                        </a>
+                        <div class="sub_category_community hide">
+                            <div class="wrap_sub_category_community">
+                                <div class="sub_menu_content">자유게시판</div>
+                                <div class="sub_menu_content">질문, 답변게시판</div>
+                                <div class="sub_menu_content">장터게시판</div>
+                            </div>
                         </div>
                     </li>
                 </ul>
@@ -345,8 +353,8 @@
                 </div>
 
             </div>
-            <div clas="scheduledivision">
-    
+
+            <div class="scheduledivision">
             </div>
         </div>
     </div>
