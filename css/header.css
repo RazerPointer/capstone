@@ -123,3 +123,83 @@
     opacity: 0;
   }
   /* 여기까지 inner */
+
+  /*달력용 css*/
+td.saturday{
+  color:blue;
+}
+
+td.sunday{
+  color:red;
+}
+
+td.cal-body{
+  width:55px;
+  height:50px;
+  font-size:8px;
+}
+/**/
+
+
+/* 마이페이지 서브메뉴 */
+header .sub_category_mypage {
+  display:flex;
+  position:absolute;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:60px;
+  background-color: #0d339a;
+  left:0;
+  top:100%;
+  transition : height .4s;  
+}
+
+header .sub_category_mypage.hide{
+  height:0;
+} 
+
+header .sub_category_mypage .wrap_sub_category_mypage {
+  display:none;
+  justify-content:center;
+  align-items:center;
+}
+
+header .sub_category_mypage .wrap_sub_category_mypage .sub_menu_content {
+  padding:10px 25px 10px 25px;
+  color:white;
+}
+/* 마이페이지 서브메뉴 css */
+
+
+
+
+/* 커뮤니티 서브메뉴 */
+header .sub_category_community {
+  display:flex;
+  position:absolute;
+  align-items:center;
+  justify-content:center;
+  width:100%;
+  height:60px;
+  background-color: #0d339a;
+  left:0;
+  top:100%;
+  transition : height .4s;  
+}
+
+header .sub_category_community.hide{
+  height:0;
+} 
+
+header .sub_category_community .wrap_sub_category_community {
+  display:none;
+  justify-content:center;
+  align-items:center;
+}
+
+header .sub_category_community .wrap_sub_category_community .sub_menu_content {
+  padding:10px 25px 10px 25px;
+  color:white;
+}
+/* 커뮤니티 서브메뉴 css */

@@ -1,3 +1,4 @@
+/*기본 설정*/
 body{
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 16px;
@@ -10,8 +11,6 @@ a{
   text-decoration:none;
 }
 
-
-
 /*게시판 보드용 css*/
 .board_base{
   display:flex;
@@ -19,7 +18,7 @@ a{
   justify-content:flex-start;
   align-items:center;
   width:400px;
-  height:140px;
+  height:364px;
 }
 
 .board_base:last-child{
@@ -30,8 +29,8 @@ a{
   display:flex;
   justify-content:center;
   align-items:flex-end;
-  margin-bottom:22px;
-  height:28px;
+  margin-bottom:18px;
+  height:24px;
 }
 
 .board_base .board_header .title {
@@ -56,8 +55,8 @@ a{
   justify-content:center;
   align-items:center;
   font-size:14px;
-  margin-bottom:8px;
-  height:14px;
+  margin-bottom:30px;
+  height:17px;
 }
 
 .board_base .board_content:last-child {
@@ -81,57 +80,103 @@ a{
 
 
 
-
-
-
-
-
-
-
-/*첫번째 파트*/
+/*메인프레임 css*/
 .wrap_mainframe {
   position:relative;
   display:flex;
-  justify-content:center;
   align-items:center;
+  justify-content:center;
 }
 
 .wrap_mainframe .mainframe {
   display:flex;
-  position:relative;
-  width:1280px;
-  height:860px;
+  align-items:center;
+  justify-content:center;
   margin-top:40px;
 }
+/**/
 
+
+/*첫번째 단락*/
 .wrap_mainframe .mainframe .firstdivision {
   display:flex;
+  flex-direction:column;
   justify-content:flex-start;
   align-items:center;
-  flex-direction: column;
   background-color: white;
-  width: 400px;
+  width:400px;
   margin-right:40px;
 }
 
-.wrap_mainframe .mainframe .firstdivision .calendar {
+.wrap_mainframe .mainframe .firstdivision .boardblock{
   display:flex;
   flex-direction:column;
+  justify-content:center;
+  align-items:center;
   width:400px;
-  height:364px; 
+  height:364px;
+}
+/**/
+
+
+
+
+
+/*두번째 단락*/
+.wrap_mainframe .mainframe .seconddivision {
+  display:flex;
+  flex-direction:column;
   justify-content:flex-start;
-  align-items:start; 
+  align-items:center;
+  background-color: white;
+  width:400px;
+  margin-right:40px;
+}
+
+.wrap_mainframe .mainframe .seconddivision .boardblock{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:400px;
+  height:364px;
+}
+/**/
+
+
+
+
+
+/*세번째 단락*/
+.wrap_mainframe .mainframe .thirddivision {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+  background-color: white;
+  width:400px;
+  height:364px;
+  margin-right:40px;
+}
+
+.wrap_mainframe .mainframe .thirddivision .calendar {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:start;
+  width:400px;
+  height:365px; 
   padding-bottom: 40px;
 }
 
-.wrap_mainframe .mainframe .firstdivision .calendar .calendar_title {
+.wrap_mainframe .mainframe .thirddivision .calendar .calendar_title {
   display:flex;
   justify-content:center;
   align-items:center;
   margin-bottom: 36px;
 }
 
-.wrap_mainframe .mainframe .firstdivision .calendar .title {
+.wrap_mainframe .mainframe .thirddivision .calendar .title {
   display:flex;
   justify-content:left;
   align-items:flex-end;
@@ -140,7 +185,7 @@ a{
   font-weight:bolder;
 }
 
-.wrap_mainframe .mainframe .firstdivision .calendar .more {
+.wrap_mainframe .mainframe .thirddivision .calendar .more {
   display:flex;
   justify-content:right;
   align-items:center;
@@ -148,7 +193,7 @@ a{
   font-size:10px;
 }
 
-.wrap_mainframe .mainframe .firstdivision .calendar .calendartoday {
+.wrap_mainframe .mainframe .thirddivision .calendar .calendartoday {
   display:flex;
   justify-content:left;
   align-items:center;
@@ -157,56 +202,10 @@ a{
   font-size:12px;
 }
 
-.wrap_mainframe .mainframe .firstdivision .calendar .day {
+.wrap_mainframe .mainframe .thirddivision .calendar .day {
   width:57px;
   height:20px;
-  margin-right:2.2px;
+  margin-right:2px;
   font-size:12px;
 }
-
-.wrap_mainframe .mainframe .firstdivision .boardblock {
-  display:flex;
-  flex-direction:column;
-  width:400px;
-  height:140px;
-  margin-bottom:40px;
-  justify-content:center;
-  align-items:center;
-}
-
-.wrap_mainframe .mainframe .firstdivision .boardblock:last-child {
-  margin-bottom:0px;
-}
-/*첫번째 파트*/
-
-
-
-
-/*두번째 파트 css 시작*/
-.wrap_mainframe .mainframe .seconddivision {
-  display:flex;
-  justify-content:flex-start;
-  align-items:center;
-  flex-direction: column;
-  background-color: white;
-  width: 400px;
-  margin-right:40px;
-}
-
-.wrap_mainframe .mainframe .seconddivision .boardblock{
-  display:flex;
-  flex-direction:column;
-  width:400px;
-  height:140px;
-  margin-bottom:40px;
-  justify-content:center;
-  align-items:center;
-}
-
-.wrap_mainframe .mainframe .seconddivision .boardblock:nth-child(2){
-  margin-bottom:84px;
-}
-
-.wrap_mainframe .mainframe .seconddivision .boardblock:last-child{
-  margin-bottom:0px;
-}
+/**/
