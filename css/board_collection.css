@@ -38,6 +38,7 @@ a{
   justify-content:left;
   align-items:center;
   width:200px;
+  height:24px;
   font-size:20px;
   font-weight:bolder;
 }
@@ -67,6 +68,7 @@ a{
   display:flex;
   justify-content:left;
   align-items:center;
+  height:17px;
   width:200px;
 }
 
@@ -74,10 +76,10 @@ a{
   display:flex;
   justify-content:right;
   align-items:center;
+  height:17px;
   width:200px;
 }
 /**/
-
 
 
 /*메인프레임 css*/
@@ -93,119 +95,5 @@ a{
   align-items:center;
   justify-content:center;
   margin-top:40px;
-}
-/**/
-
-
-/*첫번째 단락*/
-.wrap_mainframe .mainframe .firstdivision {
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
-  align-items:center;
-  background-color: white;
-  width:400px;
-  margin-right:40px;
-}
-
-.wrap_mainframe .mainframe .firstdivision .boardblock{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  width:400px;
-  height:364px;
-}
-/**/
-
-
-
-
-
-/*두번째 단락*/
-.wrap_mainframe .mainframe .seconddivision {
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
-  align-items:center;
-  background-color: white;
-  width:400px;
-  margin-right:40px;
-}
-
-.wrap_mainframe .mainframe .seconddivision .boardblock{
-  display:flex;
-  flex-direction:column;
-  justify-content:center;
-  align-items:center;
-  width:400px;
-  height:364px;
-}
-/**/
-
-
-
-
-
-/*세번째 단락*/
-.wrap_mainframe .mainframe .thirddivision {
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
-  align-items:center;
-  background-color: white;
-  width:400px;
-  height:364px;
-  margin-right:40px;
-}
-
-.wrap_mainframe .mainframe .thirddivision .calendar {
-  display:flex;
-  flex-direction:column;
-  justify-content:flex-start;
-  align-items:start;
-  width:400px;
-  height:365px; 
-  padding-bottom: 40px;
-}
-
-.wrap_mainframe .mainframe .thirddivision .calendar .calendar_title {
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  margin-bottom: 36px;
-}
-
-.wrap_mainframe .mainframe .thirddivision .calendar .title {
-  display:flex;
-  justify-content:left;
-  align-items:flex-end;
-  width:200px;
-  font-size:20px;
-  font-weight:bolder;
-}
-
-.wrap_mainframe .mainframe .thirddivision .calendar .more {
-  display:flex;
-  justify-content:right;
-  align-items:center;
-  width:200px;
-  font-size:10px;
-}
-
-.wrap_mainframe .mainframe .thirddivision .calendar .calendartoday {
-  display:flex;
-  justify-content:left;
-  align-items:center;
-  height:15px;
-  margin-bottom:14px;
-  font-size:12px;
-}
-
-.wrap_mainframe .mainframe .thirddivision .calendar .day {
-  width:57px;
-  height:20px;
-  margin-right:2px;
-  font-size:12px;
 }
 /**/
