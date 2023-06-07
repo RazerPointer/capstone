@@ -97,3 +97,72 @@ a{
   margin-top:40px;
 }
 /**/
+
+
+
+/*첫번째 단락*/
+.wrap_mainframe .mainframe .firstdivision {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+  background-color: white;
+  width:400px;
+  margin-right:40px;
+}
+
+.wrap_mainframe .mainframe .firstdivision .boardblock{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:400px;
+  height:364px;
+}
+/**/
+
+
+
+/*두번째 단락*/
+.wrap_mainframe .mainframe .seconddivision {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+  background-color: white;
+  width:400px;
+  margin-right:40px;
+}
+
+.wrap_mainframe .mainframe .seconddivision .boardblock{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:400px;
+  height:364px;
+}
+/**/
+
+
+
+/*세번째 단락*/
+.wrap_mainframe .mainframe .thirddivision {
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+  background-color: white;
+  width:400px;
+  margin-right:40px;
+}
+
+.wrap_mainframe .mainframe .thirddivision .boardblock{
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:400px;
+  height:364px;
+}
+/**/

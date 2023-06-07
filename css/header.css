@@ -1,4 +1,4 @@
-.inner {
+  ㄴ.inner {
     width:1100px;
     margin: 0 auto;
     position: relative;
@@ -207,3 +207,11 @@ header .sub_category_community .wrap_sub_category_community .sub_menu_content {
   color:white;
 }
 /* 커뮤니티 서브메뉴 css */
+
+
+
+.homebutton {
+  height:30px;
+  width:30px;
+  background-color: red;
+}
