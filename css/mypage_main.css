@@ -1,0 +1,52 @@
+/*기본 설정*/
+body{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color:#333;
+  }
+  
+  a{
+    text-decoration:none;
+  }
+
+
+/*메인프레임 css*/
+.wrap_mainframe {
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  
+  .wrap_mainframe .mainframe {
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    margin-top:40px;
+  }
+  /**/
+
+  /*첫번째 단락*/
+  .wrap_mainframe .mainframe .firstdivision {
+    display:flex;
+    justify-content:flex-start;
+    align-items:center;
+  }
+  .wrap_mainframe .mainframe .firstdivision .profile_div {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width:150px;
+    height:250px;
+    background-color: lightgrey;
+  }
+
+  .wrap_mainframe .mainframe .firstdivision .profile_div .profile_picture {
+    border : 5px solid yellow;
+    border-radius: 50%;
+    background-color: white; 
+    width: 100px;
+    height: 100px;   
+  }
