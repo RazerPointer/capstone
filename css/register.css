@@ -3,6 +3,21 @@ a {
   color: black;
   font-size: 16px;
 }
+a:link{
+  color:black;
+}
+
+a:visited{
+  color:black;
+}
+
+a:hover{
+  color:black;
+}
+
+a:active{
+  color:black;
+}
 
 .wrap_content {
   position: relative;
