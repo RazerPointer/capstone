@@ -40,7 +40,7 @@ a:active{
 
 .wrap_mainframe .mainframe {
   display:flex;
-  align-items:center;
+  align-items:flex-start;
   justify-content:center;
   margin-top:40px;
   width:1280px;
@@ -53,6 +53,7 @@ a:active{
   flex-direction:column;
   justify-content:center;
   align-items:center;
+  margin-right:40px;
 }
 
 .wrap_mainframe .mainframe .board_div .board_name {
@@ -104,46 +105,74 @@ a:active{
   flex-direction:column;
   border-top:1px solid gray; 
   border-left:1px solid gray;
-  border-right:1px solid gray; 
+  border-right:1px solid gray;
+  padding:10px; 
+  box-sizing:border-box;
 }
 
 .wrap_mainframe .mainframe .board_div .board_content_list .board_content_div:first-child{
-  width:896px;
-  display:flex;
-  flex-direction:column;
-  border-top:1px solid gray;  
-  border-left:1px solid gray;  
-  border-right:1px solid gray;  
   border-radius: 10px 10px 0 0;
 }
 
 .wrap_mainframe .mainframe .board_div .board_content_list .board_content_div:last-child{
-  width:896px;
-  display:flex;
-  flex-direction:column;
-  border:1px solid gray;  
+  border-bottom:1px solid gray;
   border-radius: 0 0 10px 10px;
 }
 /**/
 
-
 .wrap_mainframe .mainframe .board_div .board_content_list .board_content_div .info_block{
-  width:896px;
+  width:874px;
   display:flex;
   justify-content:center;
   align-items:center;
+}
+
+.wrap_mainframe .mainframe .board_div .board_content_list .board_content_div .title{
+  width:874px;
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  font-size:22px;
+  font-weight:bolder;
+  margin-bottom:5px;
+}
+
+.wrap_mainframe .mainframe .board_div .board_content_list .board_content_div .content_inner{
+  width:874px;
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  margin-bottom:5px;
 }
 
 .wrap_mainframe .mainframe .board_div .board_content_list .board_content_div .info_block .time_name{
-  width:448px;
+  width:437px;
   display:flex;
-  justify-content:center;
+  justify-content:left;
   align-items:center;
 }
 
+.wrap_mainframe .mainframe .board_div .board_content_list .board_content_div .info_block .time_name .writer_name{
+  font-weight:bolder;
+}
+
+.wrap_mainframe .mainframe .board_div .board_content_list .board_content_div .info_block .time_name .writing_time{
+  margin-right:3px;
+}
+
 .wrap_mainframe .mainframe .board_div .board_content_list .board_content_div .info_block .recom_comment{
-  width:448px;
+  width:437px;
   display:flex;
-  justify-content:center;
+  justify-content:right;
   align-items:center;
 }
+
+.wrap_mainframe .mainframe .board_div .board_content_list .board_content_div .info_block .recom_comment .recom_count{
+  color:#b63826;
+}
+
+.wrap_mainframe .mainframe .board_div .board_content_list .board_content_div .info_block .recom_comment .comment_count{
+  color:#0d339a;
+}
+/**/
+
