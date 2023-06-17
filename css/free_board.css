@@ -176,3 +176,95 @@ a:active{
 }
 /**/
 
+
+
+/*인기글 부분*/
+.wrap_mainframe .mainframe .rank_board_div {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:344px;
+}
+
+.wrap_mainframe .mainframe .rank_board_div .viewrank {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:344px;
+  background-color: whitesmoke;
+  margin-bottom:20px;
+}
+
+.wrap_mainframe .mainframe .rank_board_div .viewrank .viewrank_text{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:344px;
+  box-sizing:border-box;
+  padding:10px;
+  border:1px solid lightgray;
+}
+
+.wrap_mainframe .mainframe .rank_board_div .viewrank .viewrank_text .viewrank_title{
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  width:172px;
+  box-sizing:border-box;
+  font-weight:bolder;
+  color:#0d339a;
+}
+
+.wrap_mainframe .mainframe .rank_board_div .viewrank .viewrank_text .more{
+  display:flex;
+  justify-content:right;
+  align-items:end;
+  width:172px;
+  box-sizing: border-box;
+  font-size:10px;
+} 
+
+
+
+
+
+
+
+.wrap_mainframe .mainframe .rank_board_div .viewrank .viewrank_content{
+  display:flex;
+  flex-direction:column;
+  justify-content:flex-start;
+  align-items:center;
+  width:344px;
+}
+
+.wrap_mainframe .mainframe .rank_board_div .viewrank .viewrank_content .contentbox{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:344px;
+  padding:10px 10px 10px 10px;
+  box-sizing:border-box;
+  border-right:1px solid lightgray;
+  border-bottom:1px solid lightgray;
+  border-left:1px solid lightgray;
+} 
+
+.wrap_mainframe .mainframe .rank_board_div .viewrank .viewrank_content .contentbox .content_title{
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  width:172px;
+  font-weight:bolder;
+} 
+
+.wrap_mainframe .mainframe .rank_board_div .viewrank .viewrank_content .contentbox .write_time{
+  display:flex;
+  justify-content:right;
+  align-items:center;
+  width:172px;
+  font-size:8px;
+} 
+/* 여기까지 인기글 */
