@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extend</title>
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/info_change.css">
+    <link rel="stylesheet" href="./css/withdraw.css">
     <link rel="stylesheet" href="./css/header.css">
     <!--Google Api-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -79,96 +79,33 @@
     </header>
     <div class="wrap_mainframe">
         <div class="mainframe">
-            <div class="wrap_content">
-                <div class="profile_div">
-                    <div class="profile_title">
-                        <h1 class="title">내 정보</h1>
-                        <div class="wrapping_logout">
-                            <a href="/login.html" class="logout">로그아웃</a>
-                        </div>
-                    </div>
-                    <div class="profile_content">
-                        <img src="/kidnap.jpg" class="profile_pic">
-    
-                        </img>
-                        <div class="profile_inner">
-                            <div class="id">
-                                jinho0115  
-                            </div>
-                            <div class="name_nickname">
-                                <span>정진호</span>
-                                /
-                                <span>RazerP</span>
-                            </div>
-                            <div class="school_info">
-                                서일대 19학번
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="account">
+            <form method="post" action="abc.jsp" id="withdraw">
+                <div class="confirm_div">
                     <div class="title">
-                        계정
-                    </div>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        학교 인증
-                    </a>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        비밀번호 변경
-                    </a>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        이메일 변경
-                    </a>
-                </div>
-                <div class="account">
-                    <div class="title">
-                        커뮤니티
-                    </div>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        닉네임 설정
-                    </a>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        이용 제한 내역
-                    </a>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        게시판 관리
-                    </a>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        커뮤니티 이용규칙
-                    </a>
-                </div>
-                <div class="account">
-                    <div class="title">
-                        이용 안내
-                    </div>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        문의하기
-                    </a>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        공지사항
-                    </a>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        서비스 이용약관
-                    </a>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        개인정보 처리방침
-                    </a>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        청소년 보호 정책
-                    </a>
-                </div>
-                <div class="account">
-                    <div class="title">
-                        기타
-                    </div>
-                    <a href="javascript:void(0)" class="account_content_div">
-                        정보 동의 설정
-                    </a>
-                    <a href="javascript:void(0)" class="account_content_div">
                         회원 탈퇴
-                    </a>
+                    </div>
+                    <div class="password_confirm">
+                        <span class="confirm_title">계정 비밀번호</span>
+                        <input type="password" maxlength="20" placeholder="계정 비밀번호" class="pwd_button" />
+                    </div>
+                    <div class="explain1">
+                        <p class="explain1_text">
+                            ※ 탈퇴 및 가입을 반복할 경우, 서비스 악용 방지를 위해 재가입이 제한됩니다. 최초 탈퇴 시에는 가입 시점을 기준으로 1일간 제한되며, 2회 이상 탈퇴를 반복할 경우 30일간 제한됩니다.
+                        </p>
+                    </div>
+                    <div class="explain2">
+                        <p class="explain2_text">
+                            ※ 탈퇴 후 개인 정보, 시간표 등의 데이터가 삭제되며, 복구할 수 없습니다.<br/>
+                            ※ 다시 가입하여도, 게시판 등 이용 제한 기록은 초기화되지 않습니다.<br/>
+                            ※ 작성한 게시물은 삭제되지 않으며, (알수없음)으로 닉네임이 표시됩니다.<br/>
+                            ※ 자세한 내용은 개인정보처리방침을 확인해주세요.
+                        </p>
+                    </div>
+                    <div class="button">
+                        <input type="submit" class="withdraw_confirm_button" value="회원 탈퇴">
+                    </div>
                 </div>
-            </div>
+            </form>
         </div>
     </div>
 </body>
