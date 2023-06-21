@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Extend</title>
   <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/board_collection.css">
   <link rel="stylesheet" href="./css/header.css">
@@ -17,63 +17,63 @@
         rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="inner">
-        <ul class="main-menu">
-            <div class="blank"> <!--정렬때문에 넣은 빈공간-->
-              <a href="index.html" class="homebutton">홈버튼</a>
-            </div>
-            <ul class="wrap_category">
-                <li class="main_category_mypage">
-                    <a href="/mypage_main.html" class="main_category_name">
-                        마이페이지
-                    </a>
-                    <div class="sub_category_mypage hide">
-                        <div class="wrap_sub_category_mypage">
-                            <div class="sub_menu_content">개인정보관리</div>
-                            <div class="sub_menu_content">수강과목</div>
-                            <div class="sub_menu_content">시간표</div>
-                            <div class="sub_menu_content">즐겨찾기</div>
-                        </div>
-                    </div>
-                </li>
-                <li class="main_category">
-                    <a href="notice.html" class="main_category_name">
-                        공지사항
-                    </a>
-                </li>
-                <li class="main_category_community">
-                    <a href="board_collection.html" class="main_category_name">
-                        커뮤니티
-                    </a>
-                    <div class="sub_category_community hide">
-                        <div class="wrap_sub_category_community">
-                            <div class="sub_menu_content">자유게시판</div>
-                            <div class="sub_menu_content">질문, 답변게시판</div>
-                            <div class="sub_menu_content">장터게시판</div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <div class="wrap_othermain">
-                <div class="search">
-                    <input type="text" />
-                    <span class="material-icons">search</span>
+    <header>
+        <div class="inner">
+            <ul class="main-menu">
+                <div class="blank"> <!--정렬때문에 넣은 빈공간-->
+                  <a href="index.html" class="homebutton">홈버튼</a>
                 </div>
-                <li class="main_category">
-                    <a href="javascript:void(0)" class="main_category_name">
-                    <div class="profile">
-                        <img src="" alt="사진">
-                        <div class="user_nickname">
-                        홍길동(임시이름)
+                <ul class="wrap_category">
+                    <li class="main_category_mypage">
+                        <a href="/mypage_main.html" class="main_category_name">
+                            마이페이지
+                        </a>
+                        <div class="sub_category_mypage hide">
+                            <div class="wrap_sub_category_mypage">
+                                <div class="sub_menu_content">개인정보관리</div>
+                                <div class="sub_menu_content">수강과목</div>
+                                <div class="sub_menu_content">시간표</div>
+                                <div class="sub_menu_content">즐겨찾기</div>
+                            </div>
                         </div>
+                    </li>
+                    <li class="main_category">
+                        <a href="notice.html" class="main_category_name">
+                            공지사항
+                        </a>
+                    </li>
+                    <li class="main_category_community">
+                        <a href="board_collection.html" class="main_category_name">
+                            커뮤니티
+                        </a>
+                        <div class="sub_category_community hide">
+                            <div class="wrap_sub_category_community">
+                                <a href="/free_board.html" class="sub_menu_content">자유게시판</a>
+                                <a href="/qna_board.html" class="sub_menu_content">질문, 답변게시판</a>
+                                <a href="/market_board.html" class="sub_menu_content">장터게시판</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="wrap_othermain">
+                    <div class="search">
+                        <input type="text" />
+                        <span class="material-icons">search</span>
                     </div>
-                    </a>
-                </li>
-            </div>
-        </ul>
-    </div>
-  </header>
+                    <li class="main_category">
+                        <a href="javascript:void(0)" class="main_category_name">
+                        <div class="profile">
+                            <img src="" alt="사진">
+                            <div class="user_nickname">
+                            홍길동(임시이름)
+                            </div>
+                        </div>
+                        </a>
+                    </li>
+                </div>
+            </ul>
+        </div>
+    </header>
   <div class="wrap_mainframe">
     <div class="mainframe">
       <div class="firstdivision">
@@ -83,7 +83,7 @@
                     <div class="title">
                         자유게시판
                     </div>
-                    <a href="javascript:void(0)" class="more">
+                    <a href="/free_board.html" class="more">
                         더보기
                     </a>
                 </div>
@@ -153,7 +153,7 @@
                     <div class="title">
                         질문, 답변게시판
                     </div>
-                    <a href="javascript:void(0)" class="more">
+                    <a href="qna_board.html" class="more">
                         더보기
                     </a>
                 </div>
@@ -223,7 +223,7 @@
                     <div class="title">
                         장터게시판
                     </div>
-                    <a href="javascript:void(0)" class="more">
+                    <a href="/market_board.html" class="more">
                         더보기
                     </a>
                 </div>

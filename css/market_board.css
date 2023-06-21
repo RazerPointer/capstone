@@ -195,6 +195,7 @@ body{
   
   .wrap_mainframe .mainframe .board_div .board_content_list .board_content_div .info_block .recom_comment .recom_count{
     color:#b63826;
+    margin-right:5px;
   }
   
   .wrap_mainframe .mainframe .board_div .board_content_list .board_content_div .info_block .recom_comment .comment_count{
