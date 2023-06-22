@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/free_board.css">
-    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="/css/free_board.css">
+    <link rel="stylesheet" href="/css/header.css">
     <!--Google Api-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,44 +16,44 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
           rel="stylesheet">          
-    <script defer src="./js/calendar.js"></script>
-    <script defer src="./js/header.js"></script>
+    <script defer src="/js/calendar.js"></script>
+    <script defer src="/js/header.js"></script>
 </head>
 <body>
     <header>
         <div class="inner">
             <ul class="main-menu">
                 <div class="blank"> <!--정렬때문에 넣은 빈공간-->
-                  <a href="index.html" class="homebutton">홈버튼</a>
+                  <a href="./index.html" class="homebutton">홈버튼</a>
                 </div>
                 <ul class="wrap_category">
                     <li class="main_category_mypage">
-                        <a href="/mypage_main.html" class="main_category_name">
+                        <a href="./mypage_main.html" class="main_category_name">
                             마이페이지
                         </a>
                         <div class="sub_category_mypage hide">
                             <div class="wrap_sub_category_mypage">
-                                <div class="sub_menu_content">개인정보관리</div>
-                                <div class="sub_menu_content">수강과목</div>
-                                <div class="sub_menu_content">시간표</div>
-                                <div class="sub_menu_content">즐겨찾기</div>
+                                <a href="./personal_info_change.html" class="sub_menu_content">개인정보관리</a>
+                                <a href="./subject.html" class="sub_menu_content">수강과목</a>
+                                <a href="./schedule.html" class="sub_menu_content">시간표</a>
+                                <a href="./bookmark.html" class="sub_menu_content">즐겨찾기</a>
                             </div>
                         </div>
                     </li>
                     <li class="main_category">
-                        <a href="notice.html" class="main_category_name">
+                        <a href="./notice.html" class="main_category_name">
                             공지사항
                         </a>
                     </li>
                     <li class="main_category_community">
-                        <a href="board_collection.html" class="main_category_name">
+                        <a href="./board_collection.html" class="main_category_name">
                             커뮤니티
                         </a>
                         <div class="sub_category_community hide">
                             <div class="wrap_sub_category_community">
-                                <a href="/free_board.html" class="sub_menu_content">자유게시판</a>
-                                <a href="/qna_board.html" class="sub_menu_content">질문, 답변게시판</a>
-                                <a href="/market_board.html" class="sub_menu_content">장터게시판</a>
+                                <a href="./free_board.html" class="sub_menu_content">자유게시판</a>
+                                <a href="./qna_board.html" class="sub_menu_content">질문, 답변게시판</a>
+                                <a href="./market_board.html" class="sub_menu_content">장터게시판</a>
                             </div>
                         </div>
                     </li>
@@ -68,7 +68,7 @@
                         <div class="profile">
                             <img src="" alt="사진">
                             <div class="user_nickname">
-                            홍길동(임시이름)
+                                홍길동(임시이름)
                             </div>
                         </div>
                         </a>
@@ -82,7 +82,7 @@
             <div class="board_div">
                 <div class="board_name">
                     <div class="board_name_text">
-                        <span class="board_name_text_inner">질문, 답변게시판</span>
+                        <span class="board_name_text_inner">학교 통합 공지사항</span>
                     </div>
                     <div class="write">
                         <a href="writing_page.html" style="height:24px  "><span class="material-icons">edit</span></a>
