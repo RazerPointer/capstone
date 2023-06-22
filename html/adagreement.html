@@ -1,22 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extend</title>
-    <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/email_change.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <!--Google Api-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
-          rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
-          rel="stylesheet">          
-    <script defer src="/js/header.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="/css/adagree.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <!--Google Api-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons"
+              rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
+              rel="stylesheet">          
+        <script defer src="/js/header.js"></script>
+        <script defer src="/js/agree.js"></script>
+    </head>
 </head>
 <body>
     <header>
@@ -78,30 +81,20 @@
     </header>
     <div class="wrap_mainframe">
         <div class="mainframe">
-            <form method="post" action="abc.jsp" id="email_change">
-                <div class="email_div">
-                    <div class="title">
-                        이메일 변경
+            <form method="post" action="asdf.jsp" id="adagree"></form>
+                <div class="content">
+                    <div class="title">광고성 정보 수신 동의</div>
+                    <div class="agree_div">
+                        <input type="checkbox" id="check" onclick="is_checked()">
+                        <span>동의</span>
                     </div>
-                    <div class="newemail_input">
-                        <span class="newemail_title">이메일</span>
-                        <input type="email" maxlength="255" placeholder="이메일" class="email_button" />
-                    </div>
-                    <div class="currentpwd_div">
-                        <span class="currentpwd_title">계정 비밀번호</span>
-                        <input type="password" maxlength="20" placeholder="계정 비밀번호" class="currentpwd" />
-                    </div>
-                    <div class="explain1">
-                        <p class="text">
-                            ※ 반드시 본인의 이메일을 입력해주세요.<br/>
-                            ※ 계정 분실 시 아이디/비밀번호 찾기, 개인정보 관련 주요 고지사항 안내 등에 사용됩니다.
-                        </p>
-                    </div>
-                    <div class="button">
-                        <input type="submit" class="email_change_button" value="이메일 변경">
+                    <div class="explain_div">
+                        <p>영화/전시 초대 이벤트, 대학생 특별 할인 혜택 등 다양한 이벤트 및 정보를 서비스에서 만나보실 수 있습니다.</p>
+                        <p>1. 항목 : 마케팅 수신 동의</p>
+                        <p>2. 목적 : 서비스 및 이벤트 정보 안내</p>
+                        <p>3. 기간 : 탈퇴 후 최대 1년</p>
                     </div>
                 </div>
-            </form>
         </div>
     </div>
     <footer>

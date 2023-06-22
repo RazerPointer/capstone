@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Extend</title>
     <link href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/email_change.css">
+    <link rel="stylesheet" href="/css/nickname.css">
     <link rel="stylesheet" href="/css/header.css">
     <!--Google Api-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,6 +16,7 @@
           rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Outlined"
           rel="stylesheet">          
+    <script defer src="/js/calendar.js"></script>
     <script defer src="/js/header.js"></script>
 </head>
 <body>
@@ -78,27 +79,22 @@
     </header>
     <div class="wrap_mainframe">
         <div class="mainframe">
-            <form method="post" action="abc.jsp" id="email_change">
-                <div class="email_div">
+            <form method="post" action="abc.jsp" id="nickname">
+                <div class="nickname_div">
                     <div class="title">
-                        이메일 변경
+                        닉네임 설정
                     </div>
-                    <div class="newemail_input">
-                        <span class="newemail_title">이메일</span>
-                        <input type="email" maxlength="255" placeholder="이메일" class="email_button" />
-                    </div>
-                    <div class="currentpwd_div">
-                        <span class="currentpwd_title">계정 비밀번호</span>
-                        <input type="password" maxlength="20" placeholder="계정 비밀번호" class="currentpwd" />
+                    <div class="nickname_input">
+                        <span class="confirm_title">계정 비밀번호</span>
+                        <input type="text" maxlength="10" placeholder="닉네임" class="nickname_button" />
                     </div>
                     <div class="explain1">
-                        <p class="text">
-                            ※ 반드시 본인의 이메일을 입력해주세요.<br/>
-                            ※ 계정 분실 시 아이디/비밀번호 찾기, 개인정보 관련 주요 고지사항 안내 등에 사용됩니다.
+                        <p class="explain1_text">
+                            ※ 닉네임을 설정하면 <span class="caution">30일간 변경할 수 없습니다.</span>
                         </p>
                     </div>
                     <div class="button">
-                        <input type="submit" class="email_change_button" value="이메일 변경">
+                        <input type="submit" class="nickname_confirm_button" value="닉네임 설정">
                     </div>
                 </div>
             </form>

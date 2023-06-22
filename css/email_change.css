@@ -47,8 +47,7 @@ body{
   }
   /**/
 
-  
-  .wrap_mainframe .mainframe .confirm_div {
+  .wrap_mainframe .mainframe .email_div {
     display:flex;
     flex-direction:column;
     width:480px;
@@ -58,12 +57,12 @@ body{
     box-sizing:border-box;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .title{
+  .wrap_mainframe .mainframe .email_div .title {
     font-size:22px;
     font-weight:bolder;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .password_confirm{
+  .wrap_mainframe .mainframe .email_div .newemail_input {
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -72,39 +71,67 @@ body{
     margin-top:24px;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .password_confirm .confirm_title{
+  .wrap_mainframe .mainframe .email_div .newemail_input .newemail_title{
+    width:432px;
+    box-sizing:border-box;
+    display:flex;
+    justify-content:left;
+    align-items:center;
     font-size:12px;
-    font-weight:bolder;
-    margin-bottom:4px;
+    padding-left:8px;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .password_confirm .pwd_button{
+  .wrap_mainframe .mainframe .email_div .newemail_input .email_button{
     width:432px;
-    height:38px;
+    height:40px;
     box-sizing:border-box;
     padding:8px;
     border-radius:10px;
     border:1px solid lightgray;
     background-color: whitesmoke;
+    margin-top:4px;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .explain1{
+  .wrap_mainframe .mainframe .email_div .currentpwd_div {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:top;
+    width:432px;
     margin-top:24px;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .explain1 .explain1_text{
+  .wrap_mainframe .mainframe .email_div .currentpwd_div .currentpwd_title {
+    width:432px;
+    box-sizing:border-box;
+    display:flex;
+    justify-content:left;
+    align-items:center;
     font-size:12px;
+    padding-left:8px;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .explain2{
+  .wrap_mainframe .mainframe .email_div .currentpwd_div .currentpwd{
+    width:432px;
+    height:40px;
+    box-sizing:border-box;
+    padding:8px;
+    border-radius:10px;
+    border:1px solid lightgray;
+    background-color: whitesmoke;
+    margin-top:4px;
+  }
+
+  .wrap_mainframe .mainframe .email_div .explain1 {
     margin-top:24px;
+    width:432px;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .explain2 .explain2_text{
+  .wrap_mainframe .mainframe .email_div .explain1 .text {
     font-size:12px;
   }
-
-  .wrap_mainframe .mainframe .confirm_div .button .withdraw_confirm_button{
+  
+  .wrap_mainframe .mainframe .email_div .button .email_change_button{
     margin-top:24px;
     box-sizing:border-box;
     width:432px;

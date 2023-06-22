@@ -47,8 +47,8 @@ body{
   }
   /**/
 
-  
-  .wrap_mainframe .mainframe .confirm_div {
+
+  .wrap_mainframe .mainframe .nickname_div {
     display:flex;
     flex-direction:column;
     width:480px;
@@ -58,12 +58,12 @@ body{
     box-sizing:border-box;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .title{
+  .wrap_mainframe .mainframe .nickname_div .title {
     font-size:22px;
     font-weight:bolder;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .password_confirm{
+  .wrap_mainframe .mainframe .nickname_div .nickname_input {
     display:flex;
     flex-direction:column;
     justify-content:center;
@@ -72,15 +72,18 @@ body{
     margin-top:24px;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .password_confirm .confirm_title{
+  .wrap_mainframe .mainframe .nickname_div .nickname_input .confirm_title {
+    display:flex;
+    width:432px;
+    justify-content:left;
+    align-items:center;
     font-size:12px;
-    font-weight:bolder;
     margin-bottom:4px;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .password_confirm .pwd_button{
+  .wrap_mainframe .mainframe .nickname_div .nickname_input .nickname_button {
     width:432px;
-    height:38px;
+    height:40px;
     box-sizing:border-box;
     padding:8px;
     border-radius:10px;
@@ -88,23 +91,19 @@ body{
     background-color: whitesmoke;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .explain1{
+  .wrap_mainframe .mainframe .nickname_div .explain1 {
     margin-top:24px;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .explain1 .explain1_text{
+  .wrap_mainframe .mainframe .nickname_div .explain1 .explain1_text {
     font-size:12px;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .explain2{
-    margin-top:24px;
+  .wrap_mainframe .mainframe .nickname_div .explain1 .explain1_text .caution{
+    color:red;
   }
 
-  .wrap_mainframe .mainframe .confirm_div .explain2 .explain2_text{
-    font-size:12px;
-  }
-
-  .wrap_mainframe .mainframe .confirm_div .button .withdraw_confirm_button{
+  .wrap_mainframe .mainframe .nickname_div .button .nickname_confirm_button {
     margin-top:24px;
     box-sizing:border-box;
     width:432px;

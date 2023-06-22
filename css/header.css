@@ -17,6 +17,7 @@
   header .inner {
     height: 60px;
     width: 100%;
+    font-size: 16px;
   }
   
   header .main-menu{
@@ -214,4 +215,51 @@ header .sub_category_community .wrap_sub_category_community .sub_menu_content {
   height:30px;
   width:30px;
   background-color: red;
+}
+
+
+
+
+
+/* footer */
+footer {
+  width:100%;
+  height:100px;
+  background-color: whitesmoke;
+  display:flex;
+  align-items:center;
+}
+
+footer .footinner {
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  width:100%;
+  height:100px;
+}
+
+footer .footinner .footcategory a{
+  font-size:12px;
+  margin:4px;
+}
+
+footer .footinner .footcategory .copyright{
+  font-size:12px;
+  margin:4px;
+}
+
+footer .footinner .developer_div {
+  font-size:12px;
+  margin:4px;
+}
+
+footer .footinner .developer_div .developer{
+  font-size:12px;
+  font-weight:bolder;
+  margin-right : 20px;
+}
+
+footer .footinner .developer_div .specialthanks{
+  font-weight:bolder;
 }
