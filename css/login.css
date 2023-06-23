@@ -88,19 +88,6 @@ a:link{
 }
 
 footer {
-    display: flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
     position:absolute;
-    background-color: #e9e9e9;
-    border-top: 1px solid #d3d3d3;
     bottom: 0;
-    font-size: small;
-    width: 100%;
-    height: 50px;
-}
-
-footer .inner .menu a {
-    color: black;
 }
