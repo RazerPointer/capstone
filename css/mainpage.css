@@ -158,8 +158,9 @@ a:active{
 .wrap_mainframe .mainframe .firstdivision .calendar .more {
   display:flex;
   justify-content:right;
-  align-items:center;
+  align-items:end;
   width:200px;
+  height:28px;
   font-size:10px;
 }
 
@@ -224,4 +225,106 @@ a:active{
 
 .wrap_mainframe .mainframe .seconddivision .boardblock:last-child{
   margin-bottom:0px;
+}
+/**/
+
+
+/*세번째 파트 css*/
+.scheduledivision .scheduletitle_div{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:510px;
+  height:28px;
+  color:#333333;
+  margin-bottom:22px;
+}
+
+.scheduledivision .scheduletitle_div .title{
+  display:flex;
+  justify-content:left;
+  align-items:center;
+  width:255px;
+  height:28px;
+  font-size:20px;
+}
+
+.scheduledivision .scheduletitle_div .more{
+  display:flex;
+  justify-content:right;
+  align-items:end;
+  width:255px;
+  height:28px;
+  font-size:10px;
+}
+
+.table_head {
+  background-color:#0d339a;
+  font-size:12px;
+  color:white;
+}
+
+.table_head .date {
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  width:90px;
+  height:35px;
+  border-top:1px solid #e3e3e3;
+  border-right:1px solid #e3e3e3;
+  box-sizing:border-box;
+}
+
+.table_head th {
+  vertical-align:bottom;
+}
+
+.blank_div {
+  width:60px;
+  height: 35px;px;
+  border-top:1px solid #e3e3e3;
+  border-left:1px solid #e3e3e3;
+  border-right:1px solid #e3e3e3;
+  box-sizing:border-box;
+}
+
+.table_body {
+  color:black;
+}
+
+
+.table_body {
+  border-bottom:1px solid #e3e3e3;
+  font-size:11px;
+}
+
+.table_body th {
+  height:450px;
+  width:40px;
+  vertical-align: top;
+}
+
+.time {
+  width:60px;
+  height:44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top:1px solid #e3e3e3;
+  border-left:1px solid #e3e3e3;
+  border-right:1px solid #e3e3e3;
+  box-sizing:border-box;
+}
+
+.times {
+  height:300px;
+  top:0;
+}
+
+.grid {
+  height:44px;
+  width:90px;
+  border-top:1px solid #e3e3e3;
+  border-right:1px solid #e3e3e3;
+  box-sizing:border-box;
 }
